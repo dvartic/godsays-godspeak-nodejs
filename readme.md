@@ -1,4 +1,4 @@
-# JavaScript NodeJS port of the famous program GodSpeak (AKA GodSays) originally made by Terry A. Davis for TempleOS.
+# NodeJS port of GodSpeak (AKA GodSays) originally made by Terry A. Davis for TempleOS.
 ## What is GodSpeak?
 The original program made by Terry A. Davis is very simple and is made of the following parts:
 * A dictionary made by himself based on his ideas. It is made of 712 strings, some of them words, some of them phrases.
@@ -15,10 +15,14 @@ echo "$(gshuf -n 32 ./Happy.TXT --random-source=/dev/urandom | tr '\n' ' ')"
 * It then uses an array shuffler, similar to gshuf
 ## Instalation:
 Clone this repository:
-`git clone ----`
+```
+git clone https://github.com/dvartic/godsays-godspeak-nodejs.git
+```
 ## Usage:
 Simply call the godspeak function without any arguments to return an array of the 32 strings which constitutes the result:
-`godspeak()`
+```
+godspeak()
+```
 ## See also
 * https://templeos.org/
 * https://github.com/orhun/godsays (Rust Port)
