@@ -1,4 +1,4 @@
-# NodeJS port of GodSpeak (AKA GodSays) originally made by Terry A. Davis for TempleOS.
+# NodeJS port of GodSpeak (AKA GodSays) originally made by Terry A. Davis.
 ## What is GodSpeak?
 The original program made by Terry A. Davis is very simple and made of the following parts:
 * A dictionary made by himself based on his ideas. It contains 712 strings, some of them words, some of them phrases.
@@ -10,6 +10,7 @@ The original Bash script is as follows:
 #This prints random words.
 echo "$(gshuf -n 32 ./Happy.TXT --random-source=/dev/urandom | tr '\n' ' ')"
 ```
+Terry made GodSpeak for his GNU+Linux machine. Terry liked these random text generators and believed he was actually speaking with God. TempleOS also includes a few random generators for text, bible passages, songs and sprites.
 ## What makes this port unique?
 * I used crypto.randomBytes as the source of randomness. This method will use your system built-in cryptographically secure pseudorandom bytes generator. If using an UNIX-like system, it will use /dev/urandom. This is consistent with Terry A. Davis ideas.
 * It uses an array shuffler, similar to gshuf.
